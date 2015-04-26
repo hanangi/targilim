@@ -6,7 +6,7 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	<servlet>
 		<servlet-name>Targil4</servlet-name>
-		<servlet-class>com.gitliz.Targil4Servlet</servlet-class>
+		<servlet-class>com.gitliz.targil4.Targil4Servlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Targil4</servlet-name>
@@ -15,4 +15,13 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
+	
+	<servlet>
+	    <servlet-name>mallServlet</servlet-name>
+	    <servlet-class>com.gitliz.targil5.servlet.MallServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>mallServlet</servlet-name>
+	    <url-pattern>/mall</url-pattern>
+	</servlet-mapping>
 </web-app>
