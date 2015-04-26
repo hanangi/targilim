@@ -4,19 +4,23 @@ public class Mall {
 
 	private static final int MAX_SHOP_SIZE = 51;
 	
-	private String name;
-	private String address;
-	private int numOfFloors;
-	private int shopIndex;
+	private String name = "Azriaeli";
+	private String address = "";
+	private int numOfFloors = 0;
+	private int shopIndex = 0;
 	
-	private Shop[] shops;
+	private Shop[] shops = new Shop[MAX_SHOP_SIZE];
 	
-	public Mall() {
+	public Mall(String name) {
+		this.name = name;
+	}
+	
+	/*public Mall() {
 		this.name = "Azriaeli";
 		this.numOfFloors = 0;
 		this.shopIndex = 0;
 		this.shops = new Shop[MAX_SHOP_SIZE];
-	}
+	}*/
 	
 	public void addShop(Shop shop) {
 		
@@ -34,8 +38,8 @@ public class Mall {
 		String ret = new String( "<h1>" + getName() + "</h1>" );
 		
 		for(int i = 0; i < shopIndex ;i++) {
-			Shop current = this.shops[i];
-			ret += current.getHtmlDesc() + "<br>";
+			//Shop current = this.shops[i];
+			ret += this.shops[i].getHtmlDesc() + "<br>";
 		}
 		
 		return ret;
