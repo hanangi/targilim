@@ -2,6 +2,11 @@ package com.gitliz.targil4;
 
 import java.util.Date;
 
+/**
+ * 
+ * @author hanang
+ *
+ */
 public class Band {
 
 	private String name;
