@@ -1,6 +1,6 @@
 package com.gitliz.targil6;
 
-import com.gitliz.targil6.DemoEnum.Status;
+import com.gitliz.targil6.DemoEnum.Operation;
 
 public class EnumUser {
 
@@ -8,8 +8,10 @@ public class EnumUser {
 		
 		DemoEnum demoEnum = new DemoEnum();
 		
+		demoEnum.exectue(DemoEnum.BUY);
+		
 		//after algo calculation the decision is to sell
-		demoEnum.execute(Status.SELL);
+		demoEnum.execute(Operation.BUY);
 		
 		
 		

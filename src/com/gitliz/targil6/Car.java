@@ -4,39 +4,41 @@ import java.util.Date;
 
 public class Car {
 
+	public enum Color {
+		White, Black, Blue
+	}
+
 	private String id;
 	private Color color;
 	private Date creation;
 	private String brand;
-	
+
 	private Sit[] sits;
-	
-	public enum Color {
-		White, Black, Blue
-	}
-	
+
 	public Car(String id, String brand, int numberOfSits) {
 		this.id = id;
 		this.brand = brand;
-		
+
 		this.sits = new Sit[numberOfSits];
 	}
-	
+
 	public Car(Car car) {
 		this(new String (car.getId()), new String (car.getBrand()), car.getSits().length);
+
+		//		this.setId( new String(car.getId()) );
+		this.setColor(car.getColor());
 		
-//		this.setId( new String(car.getId()) );
-//		this.setColor(car.getColor());
 		this.creation = new Date( car.getCreation().getTime()  );
-//		this.setBrand( new String (car.getBrand()) );
 		
+		//		this.setBrand( new String (car.getBrand()) );
+
 		Sit[] coppied = car.getSits();
 		for (int i = 0; i < coppied.length; i++) {
 			this.sits[i] = new Sit( coppied[i] );
 		}
-		
+
 	}
-	
+
 	public String getId() {
 		return id;
 	}
@@ -76,6 +78,6 @@ public class Car {
 		this.sits = sits;
 	}
 
-	
-	
+
+
 }

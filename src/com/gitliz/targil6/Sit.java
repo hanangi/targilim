@@ -10,8 +10,8 @@ public class Sit {
 	public Sit() {}
 	
 	public Sit(Sit sit) {
-		this.cover = new String(sit.getCover());
-		this.color = sit.getColor();
+		//this.cover = new String(sit.getCover());
+		//bthis.color = sit.getColor();
 	}
 	public String getCover() {
 		return cover;

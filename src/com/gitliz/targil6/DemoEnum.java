@@ -39,28 +39,28 @@ public class DemoEnum {
 	/* ************************************************************ */
 	
 	
-	/*public static final int BUY = 0;
+	public static final int BUY = 0;
 	public static final int SELL = 1;
 	public static final int DO_NOTHING = 2;
 	
 	
 	public void exectue(int status) {
 		if(status == BUY) {
-			System.out.println("going to buy!");
+			System.out.println("[with constant] going to buy!");
 		}else if(status == SELL) {
-			System.out.println("going to sell!");
+			System.out.println("[with constant]going to sell!");
 		}
-	}*/
+	}
 	
-	public enum Status{
+	public enum Operation{
 		BUY, SELL, DO_NOTING
 	}
 	
-	public void execute(Status status) {
-		if(status.equals(Status.BUY)) {
-			System.out.println("going to buy!");			
-		}else if(status.equals(Status.SELL)) {
-			System.out.println("going to sell!");			
+	public void execute(Operation status) {
+		if(status.equals(Operation.BUY)) {
+			System.out.println("[with enum] going to buy!");			
+		}else if(status.equals(Operation.SELL)) {
+			System.out.println("[with enum] going to sell!");			
 		} 
 	}
 	
