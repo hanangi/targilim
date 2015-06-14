@@ -1,4 +1,4 @@
-package com.gitliz.targul10b;
+package com.gitliz.tirgul10a;
 
 import org.algo.model.PortfolioInterface;
 import org.algo.model.StockInterface;
@@ -31,17 +31,16 @@ public class Portfolio implements PortfolioInterface {
 		return null;
 	}
 	
-	public void updateBalance(float amount) throws BalanceException  {
+	public void updateBalance (float amount)  throws BalanceException, IllegalAccessException {
 		
 		if(amount == 0) {
-			//throw new IllegalAccessException("What are you doing!!!");
+			throw new IllegalAccessException("Why.. it doesn't do anything!!!");
 		}
-		
+	
 		if(amount + balance < 0) {
-			throw new BalanceException(amount + balance);
+			throw new BalanceException(amount);
 		}
 		
-		this.balance += amount;
 	}
 
 }

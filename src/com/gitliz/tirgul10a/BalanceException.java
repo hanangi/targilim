@@ -1,4 +1,4 @@
-package com.gitliz.targul10a;
+package com.gitliz.tirgul10a;
 
 public class BalanceException extends Exception {
 

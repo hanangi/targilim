@@ -1,4 +1,4 @@
-package com.gitliz.targul10b;
+package com.gitliz.tirgul10b;
 
 import org.algo.dto.PortfolioTotalStatus;
 import org.algo.exception.PortfolioException;
